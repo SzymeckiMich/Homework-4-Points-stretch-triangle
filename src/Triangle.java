@@ -1,5 +1,4 @@
 public class Triangle {
-    Stretch stretchMethods = new Stretch();
 
     public double strLength(Stretch stretch) {
         return stretch.stretchLength(stretch.getA(), stretch.getB());
@@ -9,7 +8,7 @@ public class Triangle {
         if ((isGreater(A, B, C) && isGreater(B, C, A) && isGreater(B, A, C))) {
             System.out.println("Points form a triangle");
         } else {
-            System.out.println("Points dont form triangle");
+            System.out.println("Points don't form triangle");
         }
     }
 
