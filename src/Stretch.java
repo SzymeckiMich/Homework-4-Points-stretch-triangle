@@ -26,7 +26,7 @@ public class Stretch {
         return pointB;
     }
 
-    public double stretchLength(Point A, Point B) {
+    public double stretchLength() {
         return Math.sqrt(square(pointB.getX() - pointA.getX()) + square(pointB.getY() - pointA.getY()));
     }
 

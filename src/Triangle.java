@@ -1,7 +1,10 @@
 public class Triangle {
 
     public double strLength(Stretch stretch) {
-        return stretch.stretchLength(stretch.getA(), stretch.getB());
+        return stretchLength(stretch.getA(), stretch.getB());
+    }
+    public double stretchLength(Point pointB, Point pointA) {
+        return Math.sqrt(square(pointB.getX() - pointA.getX()) + square(pointB.getY() - pointA.getY()));
     }
 
     void isTraingle(Point A, Point B, Point C) {
