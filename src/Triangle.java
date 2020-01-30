@@ -5,8 +5,12 @@ public class Triangle {
         return stretch.stretchLength(stretch.getA(), stretch.getB());
     }
 
-    boolean isTraingle(Point A, Point B, Point C) {
-        return (isGreater(A, B, C) && isGreater(B, C, A) && isGreater(B, A, C));
+    void isTraingle(Point A, Point B, Point C) {
+        if ((isGreater(A, B, C) && isGreater(B, C, A) && isGreater(B, A, C))) {
+            System.out.println("Points form a triangle");
+        } else {
+            System.out.println("Points dont form triangle");
+        }
     }
 
     boolean isGreater(Point A, Point B, Point C) {
