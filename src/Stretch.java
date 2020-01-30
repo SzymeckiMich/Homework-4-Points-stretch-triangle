@@ -5,6 +5,11 @@ public class Stretch {
     public Stretch() {
     }
 
+    public Stretch(Point pointA, Point pointB) {
+        this.pointA = pointA;
+        this.pointB = pointB;
+    }
+
     public void setA(Point a) {
         this.pointA = a;
     }
@@ -28,5 +33,4 @@ public class Stretch {
     double square(double a) {
         return a * a;
     }
-
 }
